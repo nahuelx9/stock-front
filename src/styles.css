@@ -1,0 +1,180 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: black;
+    color: white !important;
+}
+
+hr {
+    border-color: white;
+}
+
+.puntero {
+    cursor: pointer;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: black;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.btn-outline-success {
+    margin-left: 5px;
+}
+
+.img-thumb {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover!important;
+}
+
+
+/*Modal*/
+
+.modal-content h5 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+    color: gray!important;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -26px;
+    width: 103px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #60c7c1;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+}
+
+.kpx_login .kpx_socialButtons a {
+    color: white;
+    opacity: 0.9;
+}
+
+.kpx_login .kpx_socialButtons a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-facebook {
+    background: #3b5998;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 90px;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-facebook:hover {
+    background: #172d5e
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-facebook:focus {
+    background: #fff;
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-twitter {
+    background: #00aced;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 90px;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-twitter:hover {
+    background: #043d52
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-twitter:focus {
+    background: #fff;
+    color: #00aced;
+    border-color: #00aced;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-google-plus {
+    background: #c32f10;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 90px;
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-google-plus:hover {
+    background: #6b1301
+}
+
+.kpx_login .kpx_socialButtons .kpx_btn-google-plus:focus {
+    background: #fff;
+    color: #c32f10;
+    border-color: #c32f10
+}
+
+.trash:hover {
+    color: red;
+}
+
+.edit:hover {
+    color: yellow;
+}

@@ -1,0 +1,86 @@
+<!-- Modal -->
+<div [ngStyle]="{'display': modalValor}" class="modal fade show animated fadeIn" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <div class="avatar">
+                    <img src="../../../assets/img/avatar.png" alt="Avatar">
+                </div>
+                <button type="button" (click)="cerrar()" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <h5 class="modal-title text-black text-center" id="exampleModalLabel">
+                USUARIO LOGIN
+            </h5>
+            <div class="modal-body ">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-body">Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text text-body">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3 text-body">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="mb-3 form-check d-flex justify-content-end">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label text-body" for="exampleCheck1"> Check me out</label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary" type="submit">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="kpx_login m-3">
+                <p class="text-black text-center">Ingresar con</p>
+                <div class="row kpx_row-sm-offset-3 kpx_socialButtons d-flex justify-content-evenly">
+                    <div class="col-xs-2 col-sm-2">
+                        <a href="#" class="btn btn-lg btn-block kpx_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <i class="fa fa-facebook fa-2x"></i>
+                            <span class="hidden-xs"></span>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2">
+                        <a href="#" class="btn btn-lg btn-block kpx_btn-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                            <i class="fa fa-twitter fa-2x"></i>
+                            <span class="hidden-xs"></span>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2">
+                        <a href="#" class="btn btn-lg btn-block kpx_btn-google-plus" data-toggle="tooltip" data-placement="top" title="Google Plus">
+                            <i class="fa fa-google-plus fa-2x"></i>
+                            <span class="hidden-xs"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="modal-footer bg-dark d-flex justify-content-center">
+                <a class="" href="#" class="text-center text-white-50 text-decoration-none">Olvido su contraseña?</a>
+            </div>
+        </div>
+    </div>
+</div>

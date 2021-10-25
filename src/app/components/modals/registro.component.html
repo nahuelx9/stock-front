@@ -1,0 +1,84 @@
+<!-- Modal -->
+<div [ngStyle]="{'display': modalValorRegistro}" class="modal fade show animated fadeIn " id="exampleModalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+    <div class=" modal-dialog ">
+        <div class="modal-content ">
+            <div class="modal-header bg-dark ">
+                <div class="avatar ">
+                    <img src="../../../assets/img/avatar.png " alt="Avatar " />
+                </div>
+                <button type="button" (click)="cerrar()" class="btn-close bg-white " data-bs-dismiss="modal " aria-label="Close "></button>
+            </div>
+            <h5 class="modal-title text-black text-center " id="exampleModalLabel ">
+                USUARIO REGISTRO
+            </h5>
+            <div class="modal-body ">
+                <form>
+                    <div class="mb-3 text-body ">
+                        <label for="exampleInputPassword1 " class="form-label ">Nombre:</label>
+                        <input type="text " class="form-control " id="exampleInputPassword1 " />
+                    </div>
+
+                    <div class="mb-3 text-body ">
+                        <label for="exampleInputPassword1 " class="form-label ">Apellido:</label>
+                        <input type="text " class="form-control " id="exampleInputPassword1 " />
+                    </div>
+
+                    <div class="mb-3 text-body ">
+                        <label for="exampleInputPassword1 " class="form-label ">Celular:</label>
+                        <input type="text " class="form-control " id="exampleInputPassword1 " />
+                    </div>
+
+                    <div class="mb-3 text-body ">
+                        <label for="exampleInputPassword1 " class="form-label ">Direccion:</label>
+                        <input type="text " class="form-control " id="exampleInputPassword1 " />
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label for="exampleInputEmail1 " class="form-label text-body ">Email address</label>
+                        <input type="email " class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " />
+                        <div id="emailHelp " class="form-text text-body ">
+                            We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3 text-body ">
+                        <label for="exampleInputPassword1 " class="form-label ">Password</label>
+                        <input type="password " class="form-control " id="exampleInputPassword1 " />
+                    </div>
+                    <div class="mb-3 text-body ">
+                        <label for="exampleInputPassword1 " class="form-label ">Repetir Password</label>
+                        <input type="password " class="form-control " id="exampleInputPassword1 " />
+                    </div>
+                    <div class="d-grid gap-2 ">
+                        <button class="btn btn-outline-primary " type="submit ">
+              Registrarse
+            </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="kpx_login m-3 ">
+                <p class="text-black text-center ">Registrarse con</p>
+                <div class=" row kpx_row-sm-offset-3 kpx_socialButtons d-flex justify-content-evenly ">
+                    <div class="col-xs-2 col-sm-2 ">
+                        <a href="# " class="btn btn-lg btn-block kpx_btn-facebook " data-toggle="tooltip " data-placement="top " title="Facebook ">
+                            <i class="fa fa-facebook fa-2x "></i>
+                            <span class="hidden-xs "></span>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 ">
+                        <a href="# " class="btn btn-lg btn-block kpx_btn-twitter " data-toggle="tooltip " data-placement="top " title="Twitter ">
+                            <i class="fa fa-twitter fa-2x "></i>
+                            <span class="hidden-xs "></span>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 ">
+                        <a href="# " class="btn btn-lg btn-block kpx_btn-google-plus " data-toggle="tooltip " data-placement="top " title="Google Plus ">
+                            <i class="fa fa-google-plus fa-2x "></i>
+                            <span class="hidden-xs "></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="row animated fadeIn">
+    <div class="col">
+        <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombre" formControlName="nombre" [class.is-invalid]="nombreNoValido">
+                <small *ngIf="nombreNoValido" class="text-danger">Campo incorrecto o nulo</small>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="exampleInputPassword1" formControlName="precio" [class.is-invalid]="precioNoValido">
+                <small *ngIf="precioNoValido" class="text-danger">Campo incorrecto o nulo</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Categoria</label>
+                <select class="form-select" aria-label="Default select example" formControlName="categoria" [class.is-invalid]="categoriaNoValido">
+              <option selected>Seleccione una categoria</option>
+              <option value="portatiles">Portatiles</option>
+              <option value="escritorio">Escritorio</option>
+              <option value="perifericos">perifericos</option>
+              <option value="componentes">componentes</option>
+            </select>
+                <small *ngIf="categoriaNoValido" class="text-danger">Campo incorrecto o nulo</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Cargar una imagen</label>
+                <input class="form-control" accept="image/png, image/gif, image/jpeg" name="imagen" type="file" id="formFile" (change)="cargarImagen($event)" [class.is-invalid]="imagenNoValido">
+                <small *ngIf="imagenNoValido" class="text-danger">Campo incorrecto o nulo</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Descripcion</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" formControlName="descripcion" [class.is-invalid]="descripcionNoValido"></textarea>
+                <small *ngIf="descripcionNoValido" class="text-danger">Campo incorrecto o nulo</small>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

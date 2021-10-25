@@ -1,0 +1,17 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 animated fadeIn">
+    <div *ngFor="let articulo of articulos" class="col puntero">
+        <div class="card h-100">
+            <img src="{{articulo.imagen}}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{articulo.nombre}}</h5>
+                <p class="card-text">{{articulo.descripcion}}</p>
+            </div>
+            <div class="d-flex justify-content-end m-2 ">
+                <button type="button" class="btn btn-outline-success ">Agregar al carrito +</button>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">$ {{articulo.precio}}</small>
+            </div>
+        </div>
+    </div>
+</div>
